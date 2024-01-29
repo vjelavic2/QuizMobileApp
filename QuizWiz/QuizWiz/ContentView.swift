@@ -11,44 +11,57 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            
-            Text("QuizWiz")
-                .padding()
-                .foregroundColor(Color.purple)
-                .cornerRadius(10)
-                .font(.system(size: 65, weight: .bold))
-                
-            
-            
-            Image("wizardFinal")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 300, height: 300)
-                .clipShape(RoundedRectangle(cornerRadius: 65))
-            
+        NavigationView{
             VStack {
-                Text("GETS STARTED")
-                    .padding()
-                    .background(Color.purple)
-                    .font(.system(size: 20, weight: .bold))
-                    .foregroundColor(.white)
-                    .cornerRadius(80)
+                Spacer().frame(height: 50)
                 
-                
-                
-                Text ("I already have an account")
+                Text("QuizWiz")
                     .padding()
                     .foregroundColor(Color.purple)
-                    .font(.system(size: 15, weight: .bold))
-                    .background(
-                        RoundedRectangle(cornerRadius: 80)
-                            .stroke(Color.purple, lineWidth: 2)
-                            .background(Color.white)
-                    )
+                    .cornerRadius(10)
+                    .font(.system(size: 65, weight: .bold))
+                Spacer().frame(height: 30)
                 
                 
+                Image("wizardFinal")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300, height: 300)
+                    .clipShape(RoundedRectangle(cornerRadius: 65))
                 
+                
+                VStack {
+                    Spacer().frame(height: 90)
+                    
+                    
+                    
+                    NavigationLink(destination: SignUpView()){
+                        Text("GETS STARTED")
+                            .padding()
+                            .background(Color.purple)
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(.white)
+                            .cornerRadius(80)
+                    }
+                    
+                    
+                    
+                    
+                    NavigationLink(destination: SignInView()){
+                        Text ("I already have an account")
+                            .padding()
+                            .foregroundColor(Color.purple)
+                            .font(.system(size: 15, weight: .bold))
+                            .background(
+                                RoundedRectangle(cornerRadius: 80)
+                                    .stroke(Color.purple, lineWidth: 2)
+                                    .background(Color.white)
+                            )
+                        
+                        
+                    }
+                    
+                }
             }
         }
         .padding()
