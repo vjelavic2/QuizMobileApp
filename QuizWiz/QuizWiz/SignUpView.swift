@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
-
+import Firebase
 
 
 struct SignUpView: View {
     @State private var username = ""
     @State private var email = ""
     @State private var password = ""
-    
+    @State private var isUserAuthenticated = false
+
     var body: some View {
         NavigationView{
             
@@ -58,9 +59,7 @@ struct SignUpView: View {
                 
                 
                 Button(action: {
-                    print("Username: \(username)")
-                    print("Address: \(email)")
-                    print("Password: \(password)")
+                    signUp()
                 }) {
                     Text("CREATE AN ACCOUNT")
                         .padding()
@@ -69,6 +68,9 @@ struct SignUpView: View {
                         .cornerRadius(10)
                         .font(.system(size: 17, weight: .bold))
                 }
+                .background(NavigationLink("", destination: MainView(), isActive: $isUserAuthenticated)
+                    .navigationBarBackButtonHidden(true)
+)
                 Spacer().frame(height: 20)
                 
                 HStack{
@@ -89,10 +91,22 @@ struct SignUpView: View {
                 
                 
             }
-            
-            
+            .navigationBarBackButtonHidden(true)
+
         }
     }
+    private func signUp() {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let error = error {
+                    print("Error creating user.")
+                } else {
+                    // Uspješno stvoren korisnički račun
+                    print("User created successfully")
+                    isUserAuthenticated=true
+                }
+            }
+        }
+
 }
 #Preview {
     SignUpView()

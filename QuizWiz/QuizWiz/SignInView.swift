@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-
+import Firebase
 
 
 struct SignInView: View {
-    @State private var username = ""
     @State private var email = ""
     @State private var password = ""
+    @State private var isUserAuthenticated = false
     
     var body: some View {
         NavigationView{
@@ -42,7 +42,7 @@ struct SignInView: View {
                 
                 Spacer().frame(height: 50)
                 
-                TextField("Username", text: $username)
+                TextField("Email address", text: $email)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
@@ -55,9 +55,7 @@ struct SignInView: View {
                 
                 
                 Button(action: {
-                    print("Username: \(username)")
-                    print("Address: \(email)")
-                    print("Password: \(password)")
+                        signIn()
                 }) {
                     Text("SIGN IN")
                         .padding()
@@ -66,6 +64,10 @@ struct SignInView: View {
                         .cornerRadius(10)
                         .font(.system(size: 17, weight: .bold))
                 }
+                .background(NavigationLink("", destination: MainView(), isActive: $isUserAuthenticated)
+                    .navigationBarBackButtonHidden(true)
+)
+
                 Spacer().frame(height: 20)
                 
                 HStack{
@@ -84,10 +86,22 @@ struct SignInView: View {
                 Spacer()
                 
                 
+            }
+            .navigationBarBackButtonHidden(true)
+
+        }
+    } 
+     func signIn() {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                print("Wrong paassword or email.")
+            } else {
+                // Uspješna prijava
+                print("User signed in successfully")
+                isUserAuthenticated=true
                 
             }
-            
-            
+           
         }
     }
 }

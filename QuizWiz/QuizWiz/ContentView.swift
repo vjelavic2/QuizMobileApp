@@ -35,7 +35,8 @@ struct ContentView: View {
                     
                     
                     
-                    NavigationLink(destination: SignUpView()){
+                    NavigationLink(destination: SignUpView()
+                        .navigationBarBackButtonHidden(true)){
                         Text("GETS STARTED")
                             .padding()
                             .background(Color.purple)
@@ -47,7 +48,8 @@ struct ContentView: View {
                     
                     
                     
-                    NavigationLink(destination: SignInView()){
+                    NavigationLink(destination: SignInView()    
+                        .navigationBarBackButtonHidden(true)){
                         Text ("I already have an account")
                             .padding()
                             .foregroundColor(Color.purple)
@@ -62,7 +64,9 @@ struct ContentView: View {
                     }
                     
                 }
+                
             }
+            .navigationBarBackButtonHidden(true)
         }
         .padding()
     }
