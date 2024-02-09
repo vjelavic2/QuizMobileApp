@@ -31,7 +31,7 @@ struct ContentView: View {
                 
                 
                 VStack {
-                    Spacer().frame(height: 90)
+                    Spacer().frame(height: 75)
                     
                     
                     
