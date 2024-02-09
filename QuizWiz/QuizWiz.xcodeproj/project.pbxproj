@@ -10,6 +10,14 @@
 		3F31F9412B76337000DCBFAD /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9402B76337000DCBFAD /* UserView.swift */; };
 		3F31F9432B76343F00DCBFAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9422B76343F00DCBFAD /* HomeView.swift */; };
 		3F31F9452B76510B00DCBFAD /* ChangePassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9442B76510B00DCBFAD /* ChangePassView.swift */; };
+		3F31F9472B7667AF00DCBFAD /* DailyQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9462B7667AF00DCBFAD /* DailyQuizView.swift */; };
+		3F31F9492B7669D500DCBFAD /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9482B7669D400DCBFAD /* QuestionView.swift */; };
+		3F31F94D2B766A4B00DCBFAD /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F94C2B766A4B00DCBFAD /* ResultView.swift */; };
+		3F31F94F2B766AF500DCBFAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F94E2B766AF500DCBFAD /* Question.swift */; };
+		3F31F9512B76726600DCBFAD /* DQ2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9502B76726600DCBFAD /* DQ2View.swift */; };
+		3F31F9532B76727200DCBFAD /* DQ3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9522B76727200DCBFAD /* DQ3View.swift */; };
+		3F31F9552B76728500DCBFAD /* DQ4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9542B76728400DCBFAD /* DQ4View.swift */; };
+		3F31F9572B76729100DCBFAD /* DQ5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9562B76729100DCBFAD /* DQ5View.swift */; };
 		3F45B8662B67A4F9001D5A01 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45B8652B67A4F9001D5A01 /* SignInView.swift */; };
 		3F45B8682B67A512001D5A01 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45B8672B67A512001D5A01 /* SignUpView.swift */; };
 		3F45B86A2B67B8E4001D5A01 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45B8692B67B8E4001D5A01 /* MainView.swift */; };
@@ -37,6 +45,14 @@
 		3F31F9402B76337000DCBFAD /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		3F31F9422B76343F00DCBFAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F31F9442B76510B00DCBFAD /* ChangePassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassView.swift; sourceTree = "<group>"; };
+		3F31F9462B7667AF00DCBFAD /* DailyQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuizView.swift; sourceTree = "<group>"; };
+		3F31F9482B7669D400DCBFAD /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		3F31F94C2B766A4B00DCBFAD /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		3F31F94E2B766AF500DCBFAD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3F31F9502B76726600DCBFAD /* DQ2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQ2View.swift; sourceTree = "<group>"; };
+		3F31F9522B76727200DCBFAD /* DQ3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQ3View.swift; sourceTree = "<group>"; };
+		3F31F9542B76728400DCBFAD /* DQ4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQ4View.swift; sourceTree = "<group>"; };
+		3F31F9562B76729100DCBFAD /* DQ5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQ5View.swift; sourceTree = "<group>"; };
 		3F45B8652B67A4F9001D5A01 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3F45B8672B67A512001D5A01 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3F45B8692B67B8E4001D5A01 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -99,9 +115,17 @@
 				3F31F9402B76337000DCBFAD /* UserView.swift */,
 				3F31F9422B76343F00DCBFAD /* HomeView.swift */,
 				3F31F9442B76510B00DCBFAD /* ChangePassView.swift */,
+				3F31F9462B7667AF00DCBFAD /* DailyQuizView.swift */,
+				3F31F9482B7669D400DCBFAD /* QuestionView.swift */,
 				3F45B8862B67C13B001D5A01 /* GoogleService-Info.plist */,
 				3F7ED0F12B5FFDED00CDD4A4 /* Assets.xcassets */,
 				3F7ED0F32B5FFDED00CDD4A4 /* Preview Content */,
+				3F31F94C2B766A4B00DCBFAD /* ResultView.swift */,
+				3F31F94E2B766AF500DCBFAD /* Question.swift */,
+				3F31F9502B76726600DCBFAD /* DQ2View.swift */,
+				3F31F9522B76727200DCBFAD /* DQ3View.swift */,
+				3F31F9542B76728400DCBFAD /* DQ4View.swift */,
+				3F31F9562B76729100DCBFAD /* DQ5View.swift */,
 			);
 			path = QuizWiz;
 			sourceTree = "<group>";
@@ -203,13 +227,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F31F9492B7669D500DCBFAD /* QuestionView.swift in Sources */,
 				3F45B8682B67A512001D5A01 /* SignUpView.swift in Sources */,
+				3F31F9512B76726600DCBFAD /* DQ2View.swift in Sources */,
+				3F31F94D2B766A4B00DCBFAD /* ResultView.swift in Sources */,
 				3F31F9432B76343F00DCBFAD /* HomeView.swift in Sources */,
 				3F31F9412B76337000DCBFAD /* UserView.swift in Sources */,
 				3F45B8662B67A4F9001D5A01 /* SignInView.swift in Sources */,
 				3F7ED0F02B5FFDEA00CDD4A4 /* ContentView.swift in Sources */,
 				3F45B86A2B67B8E4001D5A01 /* MainView.swift in Sources */,
+				3F31F9532B76727200DCBFAD /* DQ3View.swift in Sources */,
 				3F7ED0EE2B5FFDEA00CDD4A4 /* QuizWizApp.swift in Sources */,
+				3F31F9552B76728500DCBFAD /* DQ4View.swift in Sources */,
+				3F31F94F2B766AF500DCBFAD /* Question.swift in Sources */,
+				3F31F9572B76729100DCBFAD /* DQ5View.swift in Sources */,
+				3F31F9472B7667AF00DCBFAD /* DailyQuizView.swift in Sources */,
 				3F31F9452B76510B00DCBFAD /* ChangePassView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

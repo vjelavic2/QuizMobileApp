@@ -49,13 +49,15 @@ struct HomeView: View {
                     Spacer()
                     
                     VStack(alignment: .leading) {
-                        Text("Daily Quiz")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(.purple2)
+                        NavigationLink(destination: DailyQuizView()){
+                            Text("Daily Quiz")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundColor(.purple2)
+                        }
+                            Text("5 Mixed Questions")
+                                .foregroundColor(.black)
                         
-                        Text("5 Mixed Questions")
-                            .foregroundColor(.black)
                     }
                     Spacer().frame(width: 70)
                 }
