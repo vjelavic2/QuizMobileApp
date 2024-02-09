@@ -11,15 +11,7 @@ struct MainView: View {
     var body: some View {
         NavigationView{
             VStack{
-                HStack{
-                    Spacer()
-                    NavigationLink(destination: ContentView()){
-                        Image(systemName: "arrowshape.turn.up.left.fill")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(.mygrey)
-                    }
-                }.padding(25)
+               
                 
                 
                 TabView {
@@ -30,7 +22,7 @@ struct MainView: View {
                     
                     UserView()
                         .tabItem {
-                            Label("User info", systemImage: "person.fill")
+                            Label("User", systemImage: "person.fill")
                         }
                     
                 }.accentColor(.purple)
