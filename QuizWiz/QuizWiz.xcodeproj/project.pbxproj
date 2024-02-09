@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F31F9412B76337000DCBFAD /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9402B76337000DCBFAD /* UserView.swift */; };
 		3F31F9432B76343F00DCBFAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9422B76343F00DCBFAD /* HomeView.swift */; };
+		3F31F9452B76510B00DCBFAD /* ChangePassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31F9442B76510B00DCBFAD /* ChangePassView.swift */; };
 		3F45B8662B67A4F9001D5A01 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45B8652B67A4F9001D5A01 /* SignInView.swift */; };
 		3F45B8682B67A512001D5A01 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45B8672B67A512001D5A01 /* SignUpView.swift */; };
 		3F45B86A2B67B8E4001D5A01 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45B8692B67B8E4001D5A01 /* MainView.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		3F31F9402B76337000DCBFAD /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		3F31F9422B76343F00DCBFAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3F31F9442B76510B00DCBFAD /* ChangePassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassView.swift; sourceTree = "<group>"; };
 		3F45B8652B67A4F9001D5A01 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3F45B8672B67A512001D5A01 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3F45B8692B67B8E4001D5A01 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				3F45B8692B67B8E4001D5A01 /* MainView.swift */,
 				3F31F9402B76337000DCBFAD /* UserView.swift */,
 				3F31F9422B76343F00DCBFAD /* HomeView.swift */,
+				3F31F9442B76510B00DCBFAD /* ChangePassView.swift */,
 				3F45B8862B67C13B001D5A01 /* GoogleService-Info.plist */,
 				3F7ED0F12B5FFDED00CDD4A4 /* Assets.xcassets */,
 				3F7ED0F32B5FFDED00CDD4A4 /* Preview Content */,
@@ -207,6 +210,7 @@
 				3F7ED0F02B5FFDEA00CDD4A4 /* ContentView.swift in Sources */,
 				3F45B86A2B67B8E4001D5A01 /* MainView.swift in Sources */,
 				3F7ED0EE2B5FFDEA00CDD4A4 /* QuizWizApp.swift in Sources */,
+				3F31F9452B76510B00DCBFAD /* ChangePassView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

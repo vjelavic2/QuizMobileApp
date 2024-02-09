@@ -1,16 +1,4 @@
-//
-//  UserView.swift
-//  QuizWiz
-//
-//  Created by student on 09.02.2024..
-//
 
-//
-//  HomeView.swift
-//  QuizWiz
-//
-//  Created by student on 09.02.2024..
-//
 
 import SwiftUI
 import FirebaseAuth
@@ -18,24 +6,78 @@ import FirebaseAuth
 struct UserView: View {
     
     var body: some View {
-        VStack {
-                    if let currentUser = Auth.auth().currentUser {
-                        if let email = currentUser.email {
-                            Text("Prijavljeni korisnik s e-mailom: \(email)")
-                                .padding()
-                        } else {
-                            Text("Korisnik nije prijavljen e-mailom.")
-                                .padding()
-                        }
-                    } else {
-                        Text("Nema prijavljenog korisnika.")
-                            .padding()
+        NavigationView{
+            VStack {
+                Spacer()
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(.purple)
+                        .opacity(0.3)
+                        .frame(height: 400)
+                        .padding(30)
+                    
+                    
+                    
+                    VStack{
+                        Image("wizUser")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 160, height: 160)
+                        
+                        
+                        
+                        HStack{
+                            Text("Email address:")
+                                .font(.system(size: 15, weight: .bold))
+                                .padding(.leading, 20)
+                            
+                            if let currentUser = Auth.auth().currentUser {
+                                if let email = currentUser.email {
+                                    Text("\(email)")
+                                        .padding()
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15))
+
+                                } else {
+                                    Text("Korisnik nije prijavljen e-mailom.")
+                                        .padding()
+                                }
+                            } else {
+                                Text("Nema prijavljenog korisnika.")
+                                    .padding()
+                            }
+                        }.padding()
+
+                        HStack{
+                        Text("Change your password? ")
+                                .font(.system(size: 15, weight: .bold))
+                            
+                            NavigationLink(destination: ChangePassView()){
+                                Text("No problem.")
+                                    .foregroundColor(.purple2)
+                            }
+                                
+                        }.padding()
                     }
+                        
                 }
-                .onAppear {
-                    printUserInfo()
+               
+                
+                
+                NavigationLink(destination: ContentView()){
+                    Text("Sign out")
+                        .padding()
+                        .foregroundColor(Color.mygrey)
+                        .cornerRadius(10)
+                        .font(.system(size: 25, weight: .bold))
                 }
-        
+                Spacer()
+                
+            }
+            .onAppear {
+                printUserInfo()
+            }
+        }
     }
     func printUserInfo() {
         if let currentUser = Auth.auth().currentUser {
@@ -55,3 +97,4 @@ struct UserView: View {
 #Preview {
     UserView()
 }
+

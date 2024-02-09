@@ -31,7 +31,7 @@ struct HomeView: View {
                     .frame(width: 90, height: 90)
             }.padding(35)
             
-            Spacer().frame(height: -10)
+            Spacer().frame(height: 10)
 
             
             ZStack {
@@ -57,7 +57,7 @@ struct HomeView: View {
                         Text("5 Mixed Questions")
                             .foregroundColor(.black)
                     }
-                    Spacer().frame(width: 100)
+                    Spacer().frame(width: 70)
                 }
                 .padding()
             }
@@ -74,7 +74,7 @@ struct HomeView: View {
                     .foregroundColor(.purple2)
                 Spacer()
             }
-            Spacer().frame(height: -10)
+            Spacer().frame(height: 10)
 
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
@@ -99,13 +99,13 @@ struct HomeView: View {
                         Text("5 Questions")
                             .foregroundColor(.black)
                     }
-                    Spacer().frame(width: 150)
+                    Spacer().frame(width: 110)
                 }
                 .padding()
             }
             .padding()
             
-            Spacer().frame(height: -1)
+            Spacer().frame(height: 1)
 
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
@@ -130,7 +130,7 @@ struct HomeView: View {
                         Text("5 Questions")
                             .foregroundColor(.black)
                     }
-                    Spacer().frame(width: 140)
+                    Spacer().frame(width: 110)
                 }
                 .padding()
             }

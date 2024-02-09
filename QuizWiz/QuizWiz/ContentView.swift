@@ -13,14 +13,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack {
-                Spacer().frame(height: 50)
                 
                 Text("QuizWiz")
                     .padding()
                     .foregroundColor(Color.purple)
                     .cornerRadius(10)
                     .font(.system(size: 65, weight: .bold))
-                Spacer().frame(height: 30)
+                Spacer().frame(height: 25)
                 
                 
                 Image("wizardFinal")
@@ -31,7 +30,7 @@ struct ContentView: View {
                 
                 
                 VStack {
-                    Spacer().frame(height: 75)
+                    Spacer().frame(height: 40)
                     
                     
                     
@@ -62,9 +61,9 @@ struct ContentView: View {
                         
                         
                     }
-                    
+                    Spacer()
                 }
-                
+                Spacer()
             }
             .navigationBarBackButtonHidden(true)
         }
