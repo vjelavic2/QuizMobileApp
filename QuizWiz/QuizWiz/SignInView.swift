@@ -66,6 +66,7 @@ struct SignInView: View {
                 }
                 .background(NavigationLink("", destination: MainView(), isActive: $isUserAuthenticated)
                     .navigationBarBackButtonHidden(true)
+                    .navigationBarHidden(true)
 )
 
                 Spacer().frame(height: 20)
@@ -75,22 +76,23 @@ struct SignInView: View {
                         .foregroundColor(Color.gray)
                         .font(.system(size: 17))
                     
-                    NavigationLink(destination: SignUpView()){
+                    NavigationLink(destination: SignUpView().navigationBarBackButtonHidden(true)){
                         Text("Sign Up.")
                             .foregroundColor(Color.purple2)
                             .font(.system(size: 17, weight: .bold))
                         
-                    }
+                    }.navigationBarHidden(true)
                 }
                 
                 Spacer()
                 
                 
             }
-            .navigationBarBackButtonHidden(true)
+            
 
-        }
-    } 
+        }.navigationBarHidden(true)
+    }
+    
      func signIn() {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let error = error {

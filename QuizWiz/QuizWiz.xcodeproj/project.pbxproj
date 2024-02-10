@@ -39,6 +39,7 @@
 		3F7ED0F02B5FFDEA00CDD4A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7ED0EF2B5FFDEA00CDD4A4 /* ContentView.swift */; };
 		3F7ED0F22B5FFDED00CDD4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7ED0F12B5FFDED00CDD4A4 /* Assets.xcassets */; };
 		3F7ED0F52B5FFDED00CDD4A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7ED0F42B5FFDED00CDD4A4 /* Preview Assets.xcassets */; };
+		3FB7255B2B77720400AAF533 /* CongratsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7255A2B77720400AAF533 /* CongratsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		3F7ED0EF2B5FFDEA00CDD4A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F7ED0F12B5FFDED00CDD4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7ED0F42B5FFDED00CDD4A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FB7255A2B77720400AAF533 /* CongratsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				3F31F9522B76727200DCBFAD /* DQ3View.swift */,
 				3F31F9542B76728400DCBFAD /* DQ4View.swift */,
 				3F31F9562B76729100DCBFAD /* DQ5View.swift */,
+				3FB7255A2B77720400AAF533 /* CongratsView.swift */,
 			);
 			path = QuizWiz;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				3F45B86A2B67B8E4001D5A01 /* MainView.swift in Sources */,
 				3F31F9532B76727200DCBFAD /* DQ3View.swift in Sources */,
 				3F7ED0EE2B5FFDEA00CDD4A4 /* QuizWizApp.swift in Sources */,
+				3FB7255B2B77720400AAF533 /* CongratsView.swift in Sources */,
 				3F31F9552B76728500DCBFAD /* DQ4View.swift in Sources */,
 				3F31F94F2B766AF500DCBFAD /* Question.swift in Sources */,
 				3F31F9572B76729100DCBFAD /* DQ5View.swift in Sources */,

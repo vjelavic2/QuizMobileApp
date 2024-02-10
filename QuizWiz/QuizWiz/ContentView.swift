@@ -42,7 +42,7 @@ struct ContentView: View {
                             .font(.system(size: 20, weight: .bold))
                             .foregroundColor(.white)
                             .cornerRadius(80)
-                    }
+                    }.navigationBarHidden(true)
                     
                     
                     
@@ -60,13 +60,12 @@ struct ContentView: View {
                             )
                         
                         
-                    }
+                    }.navigationBarHidden(true)
                     Spacer()
-                }
+                }.navigationBarHidden(true)
                 Spacer()
-            }
-            .navigationBarBackButtonHidden(true)
-        }
+            }.navigationBarHidden(true)
+        }.navigationBarHidden(true)
         .padding()
     }
 }

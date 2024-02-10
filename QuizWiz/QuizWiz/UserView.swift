@@ -52,28 +52,28 @@ struct UserView: View {
                         Text("Change your password? ")
                                 .font(.system(size: 15, weight: .bold))
                             
-                            NavigationLink(destination: ChangePassView()){
+                            NavigationLink(destination: ChangePassView().navigationBarBackButtonHidden(true)){
                                 Text("No problem.")
                                     .foregroundColor(.purple2)
-                            }
+                            }.navigationBarHidden(true)
                                 
                         }.padding()
-                    }
+                    }.navigationBarHidden(true)
                         
-                }
+                }.navigationBarHidden(true)
                
                 
                 
-                NavigationLink(destination: ContentView()){
+                NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
                     Text("Sign out")
                         .padding()
                         .foregroundColor(Color.mygrey)
                         .cornerRadius(10)
                         .font(.system(size: 25, weight: .bold))
-                }
+                }.navigationBarHidden(true)
                 Spacer()
                 
-            }
+            }.navigationBarHidden(true)
             .onAppear {
                 printUserInfo()
             }

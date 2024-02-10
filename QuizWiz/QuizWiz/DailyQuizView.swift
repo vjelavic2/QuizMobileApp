@@ -46,8 +46,8 @@ struct DailyQuizView: View {
                         .foregroundColor(.gray)
                 }
                 .navigationBarHidden(true)
-            }
-        }
+            }.navigationBarHidden(true)
+        }.navigationBarHidden(true)
     }
 }
    
